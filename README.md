@@ -2,6 +2,9 @@
 
 This repository presents a computer-vision system for detecting water puddles on roads using deep-learning object-detection models based on the YOLO family. The project focuses on real-world driving scenarios in Mexico and aims to support future driver-assistance and autonomous-driving systems.
 
+## 🧩 Pipeline
+
+```mermaid
 flowchart LR
   A[Route Video Capture<br/>Dashcam @ 1280x720, 30fps] --> B[Frame Extraction<br/>Positive/Negative samples]
   B --> C[Dataset Curation<br/>Structured & Unstructured roads<br/>Day / Dusk / Night / Rain]
