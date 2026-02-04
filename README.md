@@ -60,7 +60,7 @@ Images were labeled using CVAT, drawing bounding boxes around water puddles and 
 Images were labeled using bounding boxes around water puddles.
 
 <p align="center">
-  <img src="figures/annotationExamples.png" width="45%" />
+  <img src="figures/anotationExamples.png" width="60%" />
 </p>
 
 ## 🔄 Data Augmentation
@@ -78,7 +78,7 @@ Applied to improve generalization:
 The following examples illustrate color and geometric transformations applied during training:
 
 <p align="center">
-  <img src="figures/augmentatioExamples.png" width="30%" />
+  <img src="figures/augmentatioExamples.png" width="50%" />
 </p>
 
 ## 🧠 Models Evaluated
