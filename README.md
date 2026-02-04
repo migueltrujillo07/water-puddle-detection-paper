@@ -48,7 +48,7 @@ Images include a wide variety of lighting and weather conditions such as dayligh
 Below are example images from the dataset under different lighting and road conditions:
 
 <p align="center">
-  <img src="figures/lighConditions.png" width="32%" />
+  <img src="figures/lighConditions.png" width="35%" />
 </p>
  
 ## 🏷️ Annotation
@@ -60,7 +60,7 @@ Images were labeled using CVAT, drawing bounding boxes around water puddles and 
 Images were labeled using bounding boxes around water puddles.
 
 <p align="center">
-  <img src="figures/anotationExamples.png" width="60%" />
+  <img src="figures/anotationExamples.png" width="35%" />
 </p>
 
 ## 🔄 Data Augmentation
@@ -78,7 +78,7 @@ Applied to improve generalization:
 The following examples illustrate color and geometric transformations applied during training:
 
 <p align="center">
-  <img src="figures/augmentatioExamples.png" width="50%" />
+  <img src="figures/augmentatioExamples.png" width="35%" />
 </p>
 
 ## 🧠 Models Evaluated
@@ -114,9 +114,9 @@ The following table summarizes the performance of the evaluated YOLO models.
 ### Detection Examples
 
 <p align="center">
-  <img src="figures/yolov5_results.png" width="32%" />
-  <img src="figures/yolov8_results.png" width="32%" />
-  <img src="figures/yolov11_results.png" width="32%" />
+  <img src="figures/yolov5_results.png" width="35%" />
+  <img src="figures/yolov8_results.png" width="35%" />
+  <img src="figures/yolov11_results.png" width="35%" />
 </p>
 
 
