@@ -4,17 +4,34 @@ This repository presents a computer-vision system for detecting water puddles on
 
 ## 🧩 Pipeline
 ```mermaid
-flowchart LR
-  A[Route Video Capture - Dashcam 1280x720 30fps] --> B[Frame Extraction - Positive and Negative Samples]
-  B --> C[Dataset Curation - Structured and Unstructured Roads - Day Night Rain]
-  C --> D[Annotation using CVAT - Bounding Boxes puddle]
-  D --> E[YOLO Format Export - labels txt and images]
-  E --> F[Dataset Split - Train 70 Val 15 Test 15]
-  F --> G[Data Augmentation - HSV Rotate Translate Scale Shear Flip]
-  G --> H[Training - YOLOv5 YOLOv8 YOLOv11 - AdamW 250 epochs img 640]
-  H --> I[Evaluation - Precision Recall mAP50]
-  I --> J[Qualitative Analysis - Detections and Failures]
-  J --> K[Future Deployment - Jetson Raspberry Pi]
+flowchart TD
+  subgraph Data_Acquisition
+    A[Route Video Capture]
+    B[Frame Extraction]
+  end
+
+  subgraph Dataset_Preparation
+    C[Dataset Curation]
+    D[Annotation CVAT]
+    E[YOLO Format Export]
+    F[Train Val Test Split]
+    G[Data Augmentation]
+  end
+
+  subgraph Modeling
+    H[Training YOLOv5 YOLOv8 YOLOv11]
+  end
+
+  subgraph Evaluation
+    I[Precision Recall mAP50]
+    J[Qualitative Analysis]
+  end
+
+  subgraph Deployment
+    K[Future Deployment Jetson Raspberry Pi]
+  end
+
+  A --> B --> C --> D --> E --> F --> G --> H --> I --> J --> K
 ```
 
 
