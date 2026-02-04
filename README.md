@@ -155,12 +155,12 @@ Spanish version available in /paper/DeteccionDeConcentracionesdeAgua.pdf
 
 ## 👤 Authors
 
-Miguel Trujillo López
-Juan Manuel Ramos Arreguin
-Jesús Carlos Pedraza Ortega
-Saúl Tovar Arriaga
-Marco Antonio Aceves Fernández
-Karen Andrea Ramírez Arriaga
+Miguel Trujillo Lopez;
+Juan Manuel Ramos Arreguin;
+Jesús Carlos Pedraza Ortega;
+Saúl Tovar Arriaga;
+Marco Antonio Aceves Fernández;
+Karen Andrea Ramírez Arriaga;
 
 ## 🏫 Affiliation
 
