@@ -42,10 +42,26 @@ The dataset was collected using an onboard dashboard camera mounted inside a mov
 | Test | 239 |
 
 Images include a wide variety of lighting and weather conditions such as daylight, dusk, night, and rainy scenarios.
+
+### Sample Images
+
+Below are example images from the dataset under different lighting and road conditions:
+
+<p align="center">
+  <img src="figures/lighConditions.png" width="32%" />
+</p>
  
 ## 🏷️ Annotation
 
 Images were labeled using CVAT, drawing bounding boxes around water puddles and exporting in YOLO format.
+
+### Annotation Examples
+
+Images were labeled using bounding boxes around water puddles.
+
+<p align="center">
+  <img src="figures/annotationExamples.png" width="45%" />
+</p>
 
 ## 🔄 Data Augmentation
 
@@ -56,6 +72,15 @@ Applied to improve generalization:
 - Scaling
 - Shear
 - Horizontal flip
+
+### Data Augmentation
+
+The following examples illustrate color and geometric transformations applied during training:
+
+<p align="center">
+  <img src="figures/augmentatioExamples.png" width="30%" />
+</p>
+
 ## 🧠 Models Evaluated
 
 - YOLOv5
@@ -85,6 +110,15 @@ The following table summarizes the performance of the evaluated YOLO models.
 | YOLOv5 | 70.0 | 41.7 | 56.8 |
 | YOLOv8 | **78.9** | 45.1 | **64.0** |
 | YOLOv11 | 76.9 | **48.5** | 64.0 |
+
+### Detection Examples
+
+<p align="center">
+  <img src="figures/yolov5_results.png" width="32%" />
+  <img src="figures/yolov8_results.png" width="32%" />
+  <img src="figures/yolov11_results.png" width="32%" />
+</p>
+
 
 **Best Precision:** YOLOv8  
 **Best Recall:** YOLOv11  
