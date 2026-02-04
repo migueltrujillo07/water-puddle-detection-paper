@@ -15,7 +15,7 @@ flowchart LR
   H --> I[Evaluation - Precision Recall mAP50]
   I --> J[Qualitative Analysis - Detections and Failures]
   J --> K[Future Deployment - Jetson Raspberry Pi]
-
+```
 
 
 ## 📌 Problem Statement
