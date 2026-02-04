@@ -200,3 +200,7 @@ Karen Andrea Ramírez Arriaga;
 Faculty of Engineering
 Universidad Autónoma de Querétaro (UAQ)
 Querétaro, Mexico
+
+## 📜 License
+
+This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
