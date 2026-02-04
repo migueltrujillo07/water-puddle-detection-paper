@@ -4,18 +4,18 @@ This repository presents a computer-vision system for detecting water puddles on
 
 ## 🧩 Pipeline
 
-```mermaid
 flowchart LR
-  A[Route Video Capture<br/>Dashcam @ 1280x720, 30fps] --> B[Frame Extraction<br/>Positive/Negative samples]
-  B --> C[Dataset Curation<br/>Structured & Unstructured roads<br/>Day / Dusk / Night / Rain]
-  C --> D[Annotation (CVAT)<br/>Bounding boxes: puddle]
-  D --> E[YOLO Format Export<br/>labels/*.txt + images/*]
-  E --> F[Split Dataset<br/>Train 70% / Val 15% / Test 15%]
-  F --> G[Data Augmentation<br/>HSV + Rotate + Translate + Scale + Shear + Flip]
-  G --> H[Training<br/>YOLOv5 / YOLOv8 / YOLOv11<br/>AdamW, 250 epochs, img=640]
-  H --> I[Evaluation<br/>Precision, Recall, mAP@0.5]
-  I --> J[Qualitative Analysis<br/>Detection examples + failure cases]
-  J --> K[Deployment (Future)<br/>Jetson / Raspberry Pi (lite models)]
+  A[Route Video Capture - Dashcam 1280x720 30fps] --> B[Frame Extraction - Positive and Negative Samples]
+  B --> C[Dataset Curation - Structured and Unstructured Roads - Day Night Rain]
+  C --> D[Annotation using CVAT - Bounding Boxes puddle]
+  D --> E[YOLO Format Export - labels txt and images]
+  E --> F[Dataset Split - Train 70 Val 15 Test 15]
+  F --> G[Data Augmentation - HSV Rotate Translate Scale Shear Flip]
+  G --> H[Training - YOLOv5 YOLOv8 YOLOv11 - AdamW 250 epochs img 640]
+  H --> I[Evaluation - Precision Recall mAP50]
+  I --> J[Qualitative Analysis - Detections and Failures]
+  J --> K[Future Deployment - Jetson Raspberry Pi]
+
 
 
 ## 📌 Problem Statement
