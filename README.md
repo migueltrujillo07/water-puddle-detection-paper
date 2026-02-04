@@ -2,6 +2,19 @@
 
 This repository presents a computer-vision system for detecting water puddles on roads using deep-learning object-detection models based on the YOLO family. The project focuses on real-world driving scenarios in Mexico and aims to support future driver-assistance and autonomous-driving systems.
 
+flowchart LR
+  A[Route Video Capture<br/>Dashcam @ 1280x720, 30fps] --> B[Frame Extraction<br/>Positive/Negative samples]
+  B --> C[Dataset Curation<br/>Structured & Unstructured roads<br/>Day / Dusk / Night / Rain]
+  C --> D[Annotation (CVAT)<br/>Bounding boxes: puddle]
+  D --> E[YOLO Format Export<br/>labels/*.txt + images/*]
+  E --> F[Split Dataset<br/>Train 70% / Val 15% / Test 15%]
+  F --> G[Data Augmentation<br/>HSV + Rotate + Translate + Scale + Shear + Flip]
+  G --> H[Training<br/>YOLOv5 / YOLOv8 / YOLOv11<br/>AdamW, 250 epochs, img=640]
+  H --> I[Evaluation<br/>Precision, Recall, mAP@0.5]
+  I --> J[Qualitative Analysis<br/>Detection examples + failure cases]
+  J --> K[Deployment (Future)<br/>Jetson / Raspberry Pi (lite models)]
+
+
 ## 📌 Problem Statement
 
 - Water puddles on roads can:
